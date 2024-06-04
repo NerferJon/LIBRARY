@@ -1,0 +1,53 @@
+## Project Report for Biblioteca Jonathan
+
+### Table of Work
+| Date       | Time Worked | Description                       |
+|------------|-------------|-----------------------------------|
+| 2024-05-28 | 2 hours     | Set up project structure, defined initial book list |
+| 2024-05-29 | 3 hours     | Implemented book management functions (add, borrow, return, renew) |
+| 2024-05-30 | 2 hours     | Implemented donation and search functions |
+| 2024-05-31 | 1 hour      | Implemented data persistence (save/load) |
+| 2024-06-01 | 2 hours     | Wrote and ran tests using pytest  |
+| 2024-06-02 | 1 hour      | Final testing and debugging       |
+
+### Organization
+- **Functions in `library_manager.py`**:
+  - `add_book`: Adds a new book to the library.
+  - `borrow_book`: Allows a user to borrow a book for a specified number of days.
+  - `return_book`: Allows a user to return a borrowed book.
+  - `renew_book`: Renews a borrowed book for additional days.
+  - `donate_book`: Records a book donation.
+  - `search_books`: Searches for books based on a keyword.
+  - `list_available_books`: Lists all available books in the library.
+  - `save_books`: Saves the current state of the books to a CSV file.
+  - `load_books`: Loads the books from a CSV file.
+  - `save_donations`: Saves the current state of the donations to a CSV file.
+  - `load_donations`: Loads the donations from a CSV file.
+
+- **Functions in `test_library_manager.py`**:
+  - `test_add_book`: Tests the `add_book` function.
+  - `test_borrow_book`: Tests the `borrow_book` function.
+  - `test_return_book`: Tests the `return_book` function.
+  - `test_renew_book`: Tests the `renew_book` function.
+  - `test_donate_book`: Tests the `donate_book` function.
+  - `test_search_books`: Tests the `search_books` function.
+  - `test_list_available_books`: Tests the `list_available_books` function.
+  - `test_save_load_books`: Tests the `save_books` and `load_books` functions.
+  - `test_save_load_donations`: Tests the `save_donations` and `load_donations` functions.
+
+### Progress
+During this week, I completed the core functionalities of the Biblioteca Jonathan. This includes adding, borrowing, returning, and renewing books, as well as handling book donations and searching for books. I also implemented data persistence using CSV files, allowing the program to save and load the state of the library.
+
+### Description of Work
+I started by defining the initial list of books for the library. I then implemented the core functions needed for book management, such as adding, borrowing, returning, and renewing books. Next, I added functionality to handle book donations and to search for books based on keywords. 
+
+To ensure data persistence, I created functions to save the current state of the library and donations to CSV files, and to load this data when the program starts.
+
+I wrote comprehensive tests for each function using pytest to ensure everything works correctly. The tests cover various scenarios, such as adding new books, borrowing and returning books, renewing borrow periods, and searching for books.
+
+Finally, I tested the entire program to ensure there were no bugs and that all functionalities work as expected.
+
+### References
+- [Python Official Documentation](https://docs.python.org/3/)
+- [pytest Documentation](https://docs.pytest.org/)
+- Various online tutorials and examples for CSV handling in Python.
